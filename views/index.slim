@@ -1,0 +1,14 @@
+-if @pages.any?
+  ul.pages
+  - @pages = @pages.sort_by { |k,v | k }
+  - @pages.each do |p, v|
+    - if @name != NIL && url(@name).eql?(url(p))
+      a href="#{url p}"
+        .currentbutton
+          | #{p.capitalize}
+    - else
+      a href="#{url p}"
+        .button
+          | #{p.capitalize}
+-else
+  p No pages here!

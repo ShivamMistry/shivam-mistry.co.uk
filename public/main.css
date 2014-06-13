@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 13px/1.2 helvetica, sans-serif;
+    background-color: #fff;
+}
+
+.mainContent {
+    padding: 5px 5px;
+    font: 13px/1.2 helvetica, sans-serif;
+    max-width: 900px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+#navbar {
+    background-color: #1d1d1d;
+    position: fixed;
+    color: whitesmoke;
+    width: 100%;
+}
+
+#navbar a{
+    color: whitesmoke;
+    font: 24px/1.2 helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#bar-content {
+    width: 75%;
+    margin: auto;
+}
+
+
+#logo {
+    float: left;
+    color: #fff;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #101010;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h1, .pages {
+    color: #f0f0f0;
+    background: #1d1d1d;
+    background-size: 100% 100%;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 30px;
+    font-size: 36px;
+}
+
+h1 a, h1 a:visited {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.currentbutton {
+    border-bottom: 5px solid;
+    border-color: #4754ab; /* border-top: 2px solid; */
+    padding: 6px 15px;
+    margin-top: 4px; /* margin-bottom:10px; *//* margin-left: 10px; *//* margin-right: 10px; */
+    color: #fff;
+    background: #1d1d1d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    min-width: 75px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.currentbutton:hover {
+    color: #4754ab;
+}
+
+.button {
+    border-bottom: 5px solid;
+    border-color: #1d1d1d; /* border-top: 2px solid; */
+    padding: 6px 15px;
+    margin-top: 4px; /* margin-bottom:10px; *//* margin-left: 10px; *//* margin-right: 10px; */
+    color: #fff;
+    background: #1d1d1d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 75px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.button:hover {
+    border-color: #4754ab; /* background:#212121; */
+    color: #4754ab;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form, input, textarea {
+    width: 100%;
+}
+
+input, textarea {
+    border: #f2f2f2 1px solid;
+    padding: 10px 5px;
+    font-size: 16px;
+}
+
+code {
+    display: block;
+    background-color: #ffffff;
+    border: 1px dashed #4754ab;
+    color: black;
+    line-height: 1.1em;
+    padding: 1em;
+}
+
+.cancel {
+    background-color: #cccccc;
+    padding: 10px 0px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.pages {
+    margin: 0;
+    padding-left: 30px;
+}
+
+.pages a, .pages a:visited {
+    color: #dcdcdc;
+    text-decoration: none;
+}
