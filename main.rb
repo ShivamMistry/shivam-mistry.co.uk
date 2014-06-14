@@ -10,7 +10,7 @@ end
 helpers do
   def pages
     Hash[Dir['pages/*.md'].map {
-        |page| [page.sub('pages/', '').sub('.md', ''), File.read(page)] }]
+        |page| [page.sub('pages/', '').sub('.md', ''), lambda { File.read(page) }] }]
   end
 
   def url page
@@ -35,7 +35,7 @@ get('/pages/:name') do
   begin
     @pages = pages
     @name = params[:name]
-    @page = pages[@name]
+    @page = pages[@name].call
     slim :show
   rescue
     halt 404, 'Page not found'
